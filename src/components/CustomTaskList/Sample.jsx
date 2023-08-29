@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { withTaskContext } from '@twilio/flex-ui';
-import './styles.css'; 
+import './style.css'; 
 import { Theme } from '@twilio-paste/core/theme';
 
 
@@ -157,7 +157,7 @@ setChangedEmail(event.target.value);
           </p>
           <button class="first" onClick={clickHandle}>Update Notes</button>
         </div>}
-        {updated && <div class="myParagraph" onSubmit={UpdatedParagraphMessage}>Updated Notes:Thank you for submitting your information!
+        {updated && <div class="customer-details p" onSubmit={UpdatedParagraphMessage}>Updated Notes:Thank you for submitting your information!
             We'll be in touch at {email}. </div> 
             }
  
