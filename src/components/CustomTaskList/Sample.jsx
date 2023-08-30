@@ -93,6 +93,8 @@ const [changedParagraph,setChangedParagraph] = useState();
 event.preventDefault();
 setEmail(changedEmail);
 setShowDetailsPopup(true);
+setChangedParagraph(`Thank you for submitting your information!
+We'll be in touch at ${changedEmail}`)
   }
 
   const handleChange = (event) => {
@@ -100,13 +102,17 @@ setChangedEmail(event.target.value);
   }
   
   const handleParagraphChange = (event) => {
-    setChangedParagraph(true);
+    console.log('event',event);
+    setChangedParagraph(event.target.value);
+    // setChangedParagraph(true);
+
     // You can update the paragraph content here
   };
 
   const UpdatedParagraphMessage = (event) => {
+    
 
-    setChangedParagraph(true);
+    setChangedParagraph(event.target.value);
     // You can update the paragraph content here
   };
 
@@ -147,18 +153,14 @@ setChangedEmail(event.target.value);
     </form>}
     
 
-
-    
-       {showDetailsPopup && <div>
+       {showDetailsPopup && <div className="arrange"> 
           {/* Editable paragraph */}
-          <p class ="myParagraph" contentEditable={true} onBlur={handleParagraphChange}>
-            Thank you for submitting your information!
-            We'll be in touch at {email}.
-          </p>
-          <button class="first" onClick={clickHandle}>Update Notes</button>
+          <input name="input" type='text' class="customer-details p" value={changedParagraph}  onChange={handleParagraphChange} >
+          </input>
+          <div></div>
+          <button className="first" onClick={clickHandle}>Update Notes</button>
         </div>}
-        {updated && <div class="customer-details p" onSubmit={UpdatedParagraphMessage}>Updated Notes:Thank you for submitting your information!
-            We'll be in touch at {email}. </div> 
+        {updated && <div class="customer-details p" onSubmit={UpdatedParagraphMessage}>{changedParagraph}</div> 
             }
  
     <div>
