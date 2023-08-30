@@ -14,6 +14,23 @@
     line-height: 1.5; /* Added line height for spacing between lines */
     border-radius: 5px; /* Added border radius */
   }
+  .customer-details-new {
+    background-color: #aa1a1a; /* Lighter red shade */
+    color: #ffffff;
+    padding: 20px; /* Increased padding for better spacing */
+    margin-bottom: 20px;
+    text-align: center; /* Center align text */
+    font-size: 20px; /* Increased font size */
+    line-height: 1.5; /* Added line height for spacing between lines */
+    border-radius: 5px; /* Added border radius */
+  }
+  .boxes{
+    height: 30px;
+    border-radius: 10px;
+    margin-right:5px ;
+      }
+ 
+
   
   .dropdowns {
     background-color: #000000;
@@ -75,4 +92,8 @@
     margin-top: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+  }
+
+  .input-box{
+    border: 30px solid red;
   }

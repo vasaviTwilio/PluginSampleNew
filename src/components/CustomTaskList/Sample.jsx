@@ -81,7 +81,9 @@ const [changedParagraph,setChangedParagraph] = useState();
 
   const handleReasonChange = (event) => {
     setSelectedReason(event.target.value);
-   
+    setShowDetailsPopup(false);
+    setChangedParagraph(false);
+    setUpdated(false);
   };
  
 
@@ -102,8 +104,7 @@ setChangedEmail(event.target.value);
   }
   
   const handleParagraphChange = (event) => {
-    console.log('event',event);
-    setChangedParagraph(event.target.value);
+    setChangedParagraph(event.target.outerText);
     // setChangedParagraph(true);
 
     // You can update the paragraph content here
@@ -121,6 +122,8 @@ setChangedEmail(event.target.value);
     setShowForm(false);
     setUpdated(true);
   }
+
+
 
 
   return (
@@ -147,16 +150,16 @@ setChangedEmail(event.target.value);
       {console.log('selectedSubReason',selectedSubReason)}
       {selectedReason && <button onClick={handleClick}>{selectedReason}</button>}
     </div>
-   {showForm && <form onSubmit={handleSubmit}>
-      <input name="inputBox" type="text"  onChange={handleChange}></input>
+   {showForm && <form onSubmit={handleSubmit} >
+      <input name="inputBox" class="boxes" type="text"  onChange={handleChange}></input>
        <button className="first" type='submit'>Update</button>
     </form>}
     
 
        {showDetailsPopup && <div className="arrange"> 
           {/* Editable paragraph */}
-          <input name="input" type='text' class="customer-details p" value={changedParagraph}  onChange={handleParagraphChange} >
-          </input>
+          <div contentEditable={true}  name="input" type='text' class="customer-details-new p"   onBlur={handleParagraphChange} >
+          {changedParagraph}</div>
           <div></div>
           <button className="first" onClick={clickHandle}>Update Notes</button>
         </div>}
