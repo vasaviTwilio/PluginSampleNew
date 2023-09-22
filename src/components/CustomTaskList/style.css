@@ -1,99 +1,368 @@
 .container {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  .customer-details {
-    background-color: #aa1a1a; /* Lighter red shade */
-    color: #ffffff;
-    padding: 20px; /* Increased padding for better spacing */
-    margin-bottom: 20px;
-    text-align: center; /* Center align text */
-    font-size: 20px; /* Increased font size */
-    line-height: 1.5; /* Added line height for spacing between lines */
-    border-radius: 5px; /* Added border radius */
-  }
-  .customer-details-new {
-    background-color: #aa1a1a; /* Lighter red shade */
-    color: #ffffff;
-    padding: 20px; /* Increased padding for better spacing */
-    margin-bottom: 20px;
-    text-align: center; /* Center align text */
-    font-size: 20px; /* Increased font size */
-    line-height: 1.5; /* Added line height for spacing between lines */
-    border-radius: 5px; /* Added border radius */
-  }
-  .boxes{
-    height: 30px;
-    border-radius: 10px;
-    margin-right:5px ;
-      }
- 
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
-  
-  .dropdowns {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 5px; /* Added border radius */
-  }
-  
-  select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 18px; /* Increased font size for dropdowns */
-  }
-  
-  .popup {
-    background-color: #333333;
-    padding: 20px;
-    border-radius: 5px;
-    color: #ffffff;
-    text-align: center; /* Center align text */
-    line-height: 1.5; /* Added line height for spacing between lines */
-    font-size: 18px; /* Increased font size for popup content */
-    border-radius: 5px; /* Added border radius */
-  }
-  
-  .popup-details {
-    margin-bottom: 15px; /* Added margin between details and button */
-  }
-  
-  button {
-    padding: 10px 20px; /* Slightly bigger button padding */
-    background-color: #aa1a1a; /* Lighter red shade */
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px; /* Added margin above the button */
-  }
-  .first{
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 5px; /* Added border radius */
-    margin-top: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-  }
-  
-  .myParagraph{
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 5px; /* Added border radius */
-    margin-top: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-  }
+.customer-details {
+  background-color: hsl(0, 18%, 90%); /* Lighter red shade */
+  color: #ffffff;
+  padding: 20px; /* Increased padding for better spacing */
+  margin-bottom: 20px;
+  text-align: center; /* Center align text */
+  font-size: 20px; /* Increased font size */
+  line-height: 1.5; /* Added line height for spacing between lines */
+  border-radius: 5px; /* Added border radius */
+}
 
-  .input-box{
-    border: 30px solid red;
-  }
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+}
+.boxes {
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 40px;
+  outline: none;
+  font-size: 14px;
+}
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  outline: none;
+  height: 40px;
+  cursor: pointer;
+}
+
+.buttonreason {
+  padding: 10px 20px; /* Slightly bigger button padding */
+  background-color: #ee2722; /* Lighter red shade */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+}
+
+.popup {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-align: center; /* Center align text */
+  line-height: 1.5; /* Added line height for spacing between lines */
+  font-size: 18px; /* Increased font size for popup content */
+  border-radius: 5px; /* Added border radius */
+}
+
+.popup-details {
+  margin-bottom: 15px; /* Added margin between details and button */
+}
+
+.first {
+  background-color: #ef1111;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px; /* Added border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  width: 100%;
+}
+.firstButton {
+  background-color: #ef1111;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px; /* Added border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+
+.myParagraph {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px; /* Added border radius */
+  margin-top: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.input-box {
+  border: 30px solid red;
+}
+
+.index .frame-1 {
+  height: 344px;
+
+  left: 0;
+
+  position: absolute;
+
+  top: 24px;
+
+  width: 1000px;
+
+  max-width: 1200px;
+}
+
+.index .frame-2 {
+  height: 21px;
+
+  left: 0;
+
+  position: absolute;
+
+  top: 0;
+
+  width: 732px;
+}
+
+.index .frame-3 {
+  height: 13px;
+
+  left: 16px;
+
+  position: absolute;
+
+  top: 0;
+
+  width: 700px;
+}
+
+.index .CUSTOMER-INFO {
+  color: #1f1f1f;
+
+  font-family: "SF Pro Text-SemiBold", Helvetica;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  height: 18px;
+
+  left: 30px;
+
+  letter-spacing: 0;
+
+  line-height: 18px;
+
+  position: absolute;
+
+  top: -4px;
+
+  white-space: nowrap;
+
+  max-width: 1200px;
+}
+
+.index .frame-4 {
+  background-color: #000000;
+
+  height: 1px;
+
+  left: 16px;
+
+  position: absolute;
+
+  top: 21px;
+
+  width: 100%;
+
+  z-index: 1;
+}
+
+.index .profile-photo {
+  height: 5px;
+
+  left: 5px;
+
+  position: fixed;
+
+  top: 5px;
+
+  width: 5px;
+}
+
+.index .CUSTOMER-INFO {
+  color: #1f1f1f;
+
+  font-family: "SF Pro Text-SemiBold", Helvetica;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  height: 18px;
+
+  left: 30px;
+
+  letter-spacing: 0;
+
+  line-height: 18px;
+
+  position: absolute;
+
+  top: -4px;
+
+  white-space: nowrap;
+
+  max-width: 1200px;
+}
+
+.line-0 {
+  height: 1px;
+
+  left: 20px;
+
+  position: absolute;
+
+  top: 21px;
+
+  width: 100%;
+
+  border-color: #000000;
+}
+
+.line-1 {
+  height: 1px;
+
+  left: 46px;
+
+  position: absolute;
+
+  top: 21px;
+
+  width: 136px;
+
+  border-color: #ee2722;
+}
+
+.line-2 {
+  height: 1px;
+
+  left: 20px;
+
+  position: absolute;
+
+  top: 200px;
+
+  width: 100%;
+
+  border-color: #000000;
+}
+.index .customer-email {
+  color: #1f1f1f;
+
+  font-family: "SF Pro Text-SemiBold", Helvetica;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  height: 36px;
+
+  left: 0;
+
+  letter-spacing: 0;
+
+  line-height: 18px;
+
+  position: absolute;
+
+  top: 25px;
+
+  width: 156px;
+}
+
+.innerWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.customerWrapper {
+  margin-top: 20px;
+}
+.detWrap {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.customerHeading {
+  margin-left: 30px;
+  font-weight: 700;
+  border-bottom: 2px solid red;
+  padding-bottom: 8px;
+}
+.Email,
+.phone {
+  font-weight: 600;
+}
+.Emailhead,
+.phonehead {
+  font-size: 12px;
+  color: grey;
+  font-weight: 600;
+}
+.fullName {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.detailshead {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  margin-top: 20px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  min-width: 150px;
+  /* gap: 50px; */
+}
+.profilePhoto {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+.detailsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.customerWrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.editablePara {
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}

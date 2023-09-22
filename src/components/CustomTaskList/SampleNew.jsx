@@ -45,12 +45,25 @@ const handleDropdownChange = (event) => {
   return (
       <Theme.Provider theme="default">
         {jsonData && (
-        <div className="container">
+        <div className="index">
+
+<div className="frame-1">
+<div className="frame-2">
+  <div className="frame-3">
+  <p className="CUSTOMER-INFO">CUSTOMER INFO</p>
+
+
+          
           <div className="customer-details">
             <h1>Customer Details</h1>
             <p>{props?.task?.attributes?.fullname}</p>
             <p>{props?.task?.attributes?.emailaddress}</p>
           </div>
+</div>
+</div>
+</div>
+
+
           <div className="dropdowns">
       <select value={selectedOption} onChange={handleDropdownChange}>
         <option value="">Select Reason</option>
